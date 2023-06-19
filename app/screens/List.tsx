@@ -18,7 +18,6 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { Ionicons, Entypo } from "@expo/vector-icons";
-import { NavigationProp } from "@react-navigation/native";
 
 export interface Todo {
   id: string;
@@ -72,10 +71,10 @@ const List = ({ navigation }: any) => {
     return (
       <View style={styles.todoContainer}>
         <TouchableOpacity onPress={toggleDone} style={styles.todo}>
-          {item.done && (
-            <Ionicons name="checkmark-circle-outline" size={24} color="green" />
-          )}
-          {item.done && <Entypo name="circle" size={24} color="red" />}
+          {item.done && 
+            <Ionicons name="md-checkmark-circle" size={24} color="green" />
+          }
+          {!item.done && <Entypo name="circle" size={24} color="green" />}
           <Text style={styles.todoText}>{item.title}</Text>
         </TouchableOpacity>
         <Ionicons
@@ -108,11 +107,6 @@ const List = ({ navigation }: any) => {
           />
         </View>
       )}
-      <View>
-        {todos.map((todo) => (
-          <Text key={todo.id}>{todo.title}</Text>
-        ))}
-      </View>
     </View>
   );
 };
@@ -121,6 +115,8 @@ export default List;
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    marginTop: 60,
     marginHorizontal: 20,
   },
   form: {

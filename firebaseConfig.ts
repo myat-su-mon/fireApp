@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAvNu1YD8SQ2rooOd4tvFDBQvcAu1ISeRc",
-  authDomain: "firestreamapp-80fbd.firebaseapp.com",
-  projectId: "firestreamapp-80fbd",
-  storageBucket: "firestreamapp-80fbd.appspot.com",
-  messagingSenderId: "827709586883",
-  appId: "1:827709586883:web:279e67c11481135d535176",
+  apiKey: "AIzaSyB8AGqBvhIsccAZZUuM6EjU8X4Ruvy6D1A",
+  authDomain: "fir-auth-e2369.firebaseapp.com",
+  projectId: "fir-auth-e2369",
+  storageBucket: "fir-auth-e2369.appspot.com",
+  messagingSenderId: "239934860981",
+  appId: "1:239934860981:web:31f2154c9eefad102c18fc",
 };
 
 // Initialize Firebase
