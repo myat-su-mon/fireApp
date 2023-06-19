@@ -18,6 +18,7 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { Ionicons, Entypo } from "@expo/vector-icons";
+import { NavigationProp } from "@react-navigation/native";
 
 export interface Todo {
   id: string;
